@@ -18,6 +18,13 @@
         .highlight { background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); background-clip: text; color: transparent; }
         .icon-container a { color: #444; margin: 0 15px; font-size: 2rem; transition: color 0.3s ease; }
         .icon-container a:hover { color: #8ec5fc; }
+        .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+        .experience-box { backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.8); border-radius: 20px; padding: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .experience-box:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.15); cursor: pointer; }
+        .experience-icon { font-size: 3rem; color: #8ec5fc; margin-bottom: 15px; }
+        .experience-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 10px; color: #333; }
+        .experience-description { color: #555; font-size: 1rem; line-height: 1.5; }
+        .contact-box { backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.8); border-radius: 20px; padding: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); margin-top: 40px; text-align: center; }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900 min-h-screen px-8 py-16 graphic-bg">
@@ -31,11 +38,61 @@
         <p class="text-lg mt-4">
             Want to connect? Drop me an email at <a href="mailto:crayton@crayton.dev" class="text-blue-500 underline">crayton@crayton.dev</a>
         </p>
-        <div class="icon-container mt-8 flex justify-center">
-            <a href="https://github.com/Crcoli7307" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://discord.com/users/1249830316907167805" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+    </div>
+    <div class="max-w-4xl mx-auto grid-container">
+        <a href="https://www.offensive-security.com/" target="_blank" class="experience-box">
+            <i class="fas fa-shield-alt experience-icon"></i>
+            <h2 class="experience-title">Penetration Testing & Red Teaming</h2>
+            <p class="experience-description">Expertise in offensive security, vulnerability assessments, and red teaming to identify and mitigate security weaknesses.</p>
+        </a>
+        <a href="https://www.microsoft.com/en-us/windows-server" target="_blank" class="experience-box">
+            <i class="fab fa-windows experience-icon"></i>
+            <h2 class="experience-title">Microsoft Windows & Windows Server</h2>
+            <p class="experience-description">Comprehensive management and support for Windows environments, including Active Directory, Group Policy, and server infrastructure.</p>
+        </a>
+        <a href="https://www.microsoft.com/en-us/microsoft-365/exchange/email" target="_blank" class="experience-box">
+            <i class="fas fa-envelope-open-text experience-icon"></i>
+            <h2 class="experience-title">Microsoft Exchange</h2>
+            <p class="experience-description">Email server administration, including setup, configuration, and maintenance for secure enterprise communication.</p>
+        </a>
+        <a href="https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview" target="_blank" class="experience-box">
+            <i class="fas fa-tools experience-icon"></i>
+            <h2 class="experience-title">Windows Admin Center</h2>
+            <p class="experience-description">Centralized management for Windows servers, clusters, and virtual machines with secure, remote capabilities.</p>
+        </a>
+        <a href="https://www.proxmox.com/" target="_blank" class="experience-box">
+            <i class="fas fa-server experience-icon"></i>
+            <h2 class="experience-title">Proxmox & Hyper-V</h2>
+            <p class="experience-description">High-availability virtualization with Proxmox and Hyper-V, including live migrations and scalable virtual environments.</p>
+        </a>
+        <a href="https://ubuntu.com/" target="_blank" class="experience-box">
+            <i class="fab fa-linux experience-icon"></i>
+            <h2 class="experience-title">Linux Systems</h2>
+            <p class="experience-description">Experience with Ubuntu, Debian, Fedora, and other distributions, including server automation and security.</p>
+        </a>
+        <a href="https://www.ui.com/" target="_blank" class="experience-box">
+            <i class="fas fa-wifi experience-icon"></i>
+            <h2 class="experience-title">Ubiquiti Networks</h2>
+            <p class="experience-description">Design and deployment of scalable wireless and wired network solutions using Ubiquiti hardware and software.</p>
+        </a>
+        <a href="https://aws.amazon.com/" target="_blank" class="experience-box">
+            <i class="fab fa-aws experience-icon"></i>
+            <h2 class="experience-title">Amazon Web Services</h2>
+            <p class="experience-description">Cloud computing with EC2, S3, and CloudWatch, including scalable architecture and cost optimization.</p>
+        </a>
+        <a href="https://www.synology.com/" target="_blank" class="experience-box">
+            <i class="fas fa-database experience-icon"></i>
+            <h2 class="experience-title">Storage Systems</h2>
+            <p class="experience-description">Management of iSCSI, RAID, and ZFS for high-availability, fault-tolerant storage solutions.</p>
+        </a>
+    </div>
+    <div class="contact-box max-w-4xl mx-auto">
+        <div class="icon-container">
+            <a href="https://github.com/Crayton" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
             <a href="mailto:crayton@crayton.dev" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
+        <p class="text-sm text-gray-500 mt-4">&copy; 2025 Crayton Litton</p>
     </div>
 </body>
 </html>

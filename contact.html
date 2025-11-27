@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Crayton Litton</title>
+  <meta name="description" content="Get in touch with systems administrator and developer Crayton Litton." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="shell">
+        <div class="header-inner">
+          <a href="index.html" class="logo" aria-label="Go to home">
+            <span class="logo-mark">C</span>
+            <span class="logo-text">Crayton</span>
+          </a>
+
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" aria-label="Main navigation">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="expertise.html" class="nav-link">Expertise</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link nav-link--active">Contact</a>
+            <a href="https://status.crayton.dev" class="nav-link nav-link--subtle" target="_blank" rel="noreferrer">Status</a>
+            <a href="https://github.com/Crcoli7307" class="nav-link nav-link--button" target="_blank" rel="noreferrer">GitHub</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <p class="eyebrow">Contact</p>
+          <h1>Let's talk about your infrastructure.</h1>
+          <p class="lead narrow">
+            Whether it's a small lab environment or production systems, I'm happy to talk through ideas, problems, or
+            opportunities.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell grid-2 contact-grid">
+          <article>
+            <h2>Reach out directly</h2>
+            <p>
+              The easiest way to get in touch is email. Share a bit of context about your systems, what you're trying to
+              achieve, and any timelines you have in mind.
+            </p>
+            <div class="contact-methods">
+              <a class="contact-chip" href="mailto:crayton@crayton.dev">
+                <span class="chip-label">Email</span>
+                <span class="chip-value">crayton@crayton.dev</span>
+              </a>
+              <a class="contact-chip" href="https://github.com/Crcoli7307" target="_blank" rel="noreferrer">
+                <span class="chip-label">GitHub</span>
+                <span class="chip-value">@Crcoli7307</span>
+              </a>
+            </div>
+          </article>
+
+          <article>
+            <h2>Quick note</h2>
+            <form class="contact-form" id="contact-form">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="What can I help you with?"></textarea>
+              </div>
+              <p class="form-note">This form is front‑end only. Wire it up to your preferred backend or service.</p>
+              <button type="submit" class="button primary" disabled>Send (not wired yet)</button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <p class="footer-title">Crayton Litton</p>
+          <p>Systems Administrator, Programmer & IT Systems Architect.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:crayton@crayton.dev">crayton@crayton.dev</a>
+          <a href="https://github.com/Crcoli7307" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://status.crayton.dev" target="_blank" rel="noreferrer">Status</a>
+        </div>
+        <p class="footer-meta">&copy; <span id="year"></span> Crayton Litton</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
